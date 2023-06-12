@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+        <nav class="nav">
+            <ul>
+                <a class="nav-link" href="index.html">Главная</a>
+                <a class="nav-link" href="page-html.html">HTML</a>
+                <a class="nav-link" href="css-page.html">CSS</a>
+                <a class="nav-link" href="#">Онлайн-редактор</a>
+            </ul>
+        </nav>
+    </div>
+</div>
+    </header>
+    <main>
+        <h1 class="h1-title">Онлайн-редактор</h1>
+    <div class="container">
+        <div class="contain-online">
+        <div class="online-flex">
+    <textarea class="htmleditor_input" id="mycode">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+    </textarea>
+    <div id="htmleditor_result">
+        <iframe class="htmleditor_output" id="display"></iframe>
+        </div> 
+        </div>
+        <div class="button-flex">
+        <input onclick="update();" class="glow-button online" type="button" value="Показать результат">
+    </div>
+    </div>
+</div>
+</main>
+<footer class="footer">
+    <div class="footer__addr">
+      <h2>Контакты</h2>
+      <address>
+        г. Нефтеюганск, 16-й микрорайон<br>
+        <a class="footer__btn" href="mailto:denisfurler2002@mail.ru">Почта: denisfurler2002@mail.ru</a>
+      </address>
+      <p>Телефон: <a href="telto:89292047354">+7 (929) 204-73-54</a></p>
+      <p>Created by: Биктимеров Денис</p>
+    </div>
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Страницы</h2>
+        <ul class="nav__ul">
+          <li>
+            <a href="/index.html">Главная</a>
+          </li>    
+          <li>
+            <a href="/page-html.html">HTML</a>
+          </li>                 
+          <li>
+            <a href="/css-page.html">CSS</a>
+          </li>
+          <li>
+            <a href="#">Онлайн-редактор</a>
+          </li>
+        </ul>
+      </li>         
+      <li class="nav__item">
+        <h2 class="nav__title">Правила</h2>
+        
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Политика конфидециальности</a>
+          </li>
+          <li>
+            <a href="#">Условия использования</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <h2 class="nav__title">Социальные сети</h2>
+        
+        <ul class="nav__ul">
+          <li>
+            <a href="#">ВКонтакте</a>
+          </li>
+          <li>
+            <a href="#">Telegram</a>
+          </li>
+          <li>
+            <a href="#">Youtube</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="legal">
+      <p>&copy; 2023 HTML & CSS. Все права защищены.</p>
+    </div>
+  </footer>
+<script> 
+    function update() 
+        { 
+          var x = document.getElementById('mycode').value; 
+          document.getElementById("display").contentDocument.body.innerHTML = x;
+        } 
+        </script>
+</body>
+</html>
